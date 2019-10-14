@@ -1,0 +1,56 @@
+{
+  "name": "vingle-corgi-cli",
+  "version": "1.0.0-beta.1",
+  "description": "Restful HTTP Framework for AWS Lambda - AWS API Gateway Proxy Integration, CLI",
+  "main": "./dst/index.js",
+  "typings": "./dst/index.d.ts",
+  "engines": {
+    "node": "^8.10.0",
+    "npm": "^6.10.0"
+  },
+  "bin": {
+    "vingle-corgi": "./dst/index.js"
+  },
+  "scripts": {
+    "clean": "rm -Rf dst",
+    "prebuild": "npm run clean",
+    "build": "check-engine && tsc -d",
+    "lint": "tslint -p ./tsconfig.test.json",
+    "prepublish": "npm run build",
+    "pretest": "npm run build -- -p ./tsconfig.test.json",
+    "test": "mocha dst/**/__test__/**/*_spec.js"
+  },
+  "files": [
+    "dst"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balmbees/corgi.git"
+  },
+  "author": "Kurt Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balmbees/corgi/issues"
+  },
+  "homepage": "https://github.com/balmbees/corgi#readme",
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/express": "^4.17.1",
+    "@types/mocha": "2.2.48",
+    "@types/node": "^8.10.54",
+    "chai": "4.2.0",
+    "check-engine": "1.8.1",
+    "mocha": "3.5.3",
+    "np": "3.1.0",
+    "tslint": "5.18.0",
+    "typescript": "^3.6.2",
+    "vingle-corgi": "^3.0.0-beta.8"
+  },
+  "peerDependencies": {
+    "vingle-corgi": "^3.0.0-beta.8"
+  },
+  "dependencies": {
+    "commander": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}
