@@ -1,6 +1,11 @@
 # vingle-corgi-cli
 CLI commands for development for vingle-corgi
 
+## install 
+```
+npm install vingle-corgi-cli --save-dev
+```
+
 ## vingle-corgi build <entitiesFolder>
 read list of entities from given folder, generate definitions.json that contains JSONSchema of given entities
 ```
