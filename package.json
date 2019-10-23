@@ -1,6 +1,6 @@
 {
   "name": "vingle-corgi-cli",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.1",
   "description": "Restful HTTP Framework for AWS Lambda - AWS API Gateway Proxy Integration, CLI",
   "main": "./dst/index.js",
   "typings": "./dst/index.d.ts",
