@@ -1,0 +1,22 @@
+{
+  "Item": {
+    "additionalProperties": false,
+    "properties": {
+      "height": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "width": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "width",
+      "height",
+      "name"
+    ],
+    "type": "object"
+  }
+}
