@@ -7,6 +7,7 @@ import * as URL from "url";
 
 export function runLocal(handler: Function) {
   const app = express();
+  app.use(express.json());
   app.use((req, res) => {
     const url = URL.parse(req.url, true);
     handler({
